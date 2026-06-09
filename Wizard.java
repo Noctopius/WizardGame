@@ -62,20 +62,20 @@ public class Wizard
                 if(d20 < 10)
                 {
                     health -= 10;
-                    System.out.println(name + " rolls a d" + d20 + " and takes 10 damage!");
+                    System.out.println(name + " rolls a " + d20 + " and takes 10 damage!");
                     if(health < 0)
                         health = 0;
                 }
                 else if(d20 < 15)
                 {
                     health -= 5;
-                    System.out.println(name + " rolls a d" + d20 + " and takes 5 damage!");
+                    System.out.println(name + " rolls a " + d20 + " and takes 5 damage!");
                     if(health < 0)
                         health = 0;
                 }
                 else
                 {
-                    System.out.println(name + " rolls a d" + d20 + " and avoids the incoming attack!");
+                    System.out.println(name + " rolls a " + d20 + " and avoids the incoming attack!");
                 }
                 if(health > 0)
                 {
@@ -119,20 +119,20 @@ public class Wizard
                 if(d20 < 10)
                 {
                     health -= 10;
-                    System.out.println(name + " rolls a d" + d20 + " and takes 10 damage!");
+                    System.out.println(name + " rolls a " + d20 + " and takes 10 damage!");
                     if(health < 0)
                         health = 0;
                 }
                 else if(d20 < 15)
                 {
                     health -= 5;
-                    System.out.println(name + " rolls a d" + d20 + " and takes 5 damage!");
+                    System.out.println(name + " rolls a " + d20 + " and takes 5 damage!");
                     if(health < 0)
                         health = 0;
                 }
                 else
                 {
-                    System.out.println(name + " rolls a d" + d20 + " and avoids the incoming attack!");
+                    System.out.println(name + " rolls a " + d20 + " and avoids the incoming attack!");
                 }
                 System.out.println("Energy: " + energy + "/" + maxEnergy);
                 System.out.println("Health: " + health + "/" + maxHealth);
@@ -151,12 +151,12 @@ public class Wizard
             if(d20 <= 4)
             {
                 health = 0;
-                System.out.println(name + " rolls a d" + d20 + "! " + name + " attempts to meditate, but gets assassinated!\n");
+                System.out.println(name + " rolls a " + d20 + "! " + name + " attempts to meditate, but gets assassinated!\n");
             }
             else if(d20 <= 9)
             {
                 health -= 50;
-                System.out.println(name + " rolls a d" + d20 + "! " + name + " attempts to meditate, but gets attacked and takes heavy damage!");
+                System.out.println(name + " rolls a " + d20 + "! " + name + " attempts to meditate, but gets attacked and takes heavy damage!");
                 if(health <= 0)
                 {
                     health = 0;
@@ -171,7 +171,7 @@ public class Wizard
             else if(d20 <= 14)
             {
                 energy += (maxEnergy - energy) / 2;
-                System.out.println(name + " rolls a d" + d20 + "! " + name + " meditates and recovers around half of missing energy!");
+                System.out.println(name + " rolls a " + d20 + "! " + name + " meditates and recovers around half of missing energy!");
             }
             else if(d20 <= 19)
             {
@@ -179,13 +179,13 @@ public class Wizard
                 health += 20;
                 if(health > maxHealth)
                     health = maxHealth;
-                System.out.println(name + " rolls a d" + d20 + "! " + name + " meditates well and recovers all of missing energy and 20 health!");
+                System.out.println(name + " rolls a " + d20 + "! " + name + " meditates well and recovers all of missing energy and 20 health!");
             }
             else
             {
                 energy = maxEnergy;
                 health = maxHealth;
-                System.out.println(name + " rolls a d" + d20 + "! " + name + " meditates flawlessly, achieving englightenment itself and recovering all energy and health!");
+                System.out.println(name + " rolls a " + d20 + "! " + name + " meditates flawlessly, achieving englightenment itself and recovering all energy and health!");
             }
             if(health > 0)
             {
